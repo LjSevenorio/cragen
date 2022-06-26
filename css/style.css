@@ -784,7 +784,6 @@ nav {
   background-position: 0;
 }
 
-
 li.dropdown {
   display: inline-block;
 }
@@ -1093,20 +1092,20 @@ li.dropdown {
   margin: 15px auto 0;
 }
 
-.section02  {
-    /* The image used */
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url("/images/sample/sample1.jpg");
+.section02 {
+  /* The image used */
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+    url("/images/sample/sample1.jpg");
 
-    /* Set a specific height */
-    padding: 1px 0; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* Set a specific height */
+  padding: 1px 0;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
 
 /* Section03 */
 
@@ -1362,8 +1361,7 @@ li.dropdown {
 
 .tabImg01 {
   width: 50%;
-} 
-
+}
 
 @media screen and (max-width: 768px) {
   nav {
@@ -1619,6 +1617,16 @@ li.dropdown {
     text-align: center;
     top: calc(85%);
   }
+
+  /* ------------BRANCH 1 TABS---------*/
+
+  .accordion-active .accordion-item__container {
+    display: block;
+}
+
+.tabImg01 {
+  width: 100%;
+}
 }
 
 @media screen and (max-width: 450px) {

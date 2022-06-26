@@ -24,20 +24,6 @@ $(document).ready(function () {
     });
   }
 
-  $(".accordion-tabs button").click(function () {
-    if ($('.tabItem1').hasClass('.accordion-active')) {
-      $('.tab2').hide();
-      $('.tab3').hide();
-    } else if ($('.tabItem2').hasClass('.accordion-active')) {
-      $('.tab1').hide();
-      $('.tab3').hide();
-    } else if ($('.tabItem3').hasClass('.accordion-active')) {
-      $('.tab1').hide();
-      $('.tab2').hide();
-    }
-    $('.tabs-slick').slick('refresh');
-  });
-
   // Scroll Up Nav
 
   if ($(window).width() > 768) {
@@ -69,13 +55,13 @@ $(document).ready(function () {
   });
 
 
-  $(document).ready(function () {
-    $(window).on('resize', function () {
-      if ($(window).width() < 767) {
-        location.reload();
-      } else {}
-    });
-  });
+  // $(document).ready(function () {
+  //   $(window).on('resize', function () {
+  //     if ($(window).width() < 767) {
+  //       location.reload();
+  //     }
+  //   });
+  // });
 
   $("a").on("click", function (e) {
     if (this.hash !== "") {
@@ -144,16 +130,37 @@ $(document).ready(function () {
 
   $('.banner-slick').slick({});
 
-  $('.tabs-slick').slick({});
+  $('.tabs-slick').slick({
+    prevArrow: false,
+    nextArrow: false,
+    responsive: [{
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    }
+  ]
+  });
 
+
+
+  $(".accordion-tabs button").click(function () {
+    if ($('.accordion-tab').hasClass('.accordion-active')) 
+    {
+      $('accordion-active').fadeIn(1000);
+    }
+    $('.tabs-slick').slick('refresh');
+    $('.accordion-active').fadeIn(200)
+
+  });
   AOS.init({
     once: true
   });
 });
 
 $(document).ready(function () {
-
-
 
   const labels = document.querySelectorAll(".accordion-item__label");
   const tabs = document.querySelectorAll(".accordion-tab");
