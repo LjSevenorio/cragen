@@ -1620,15 +1620,25 @@ li.dropdown {
 
   .accordion-active .accordion-item__container {
     display: block;
-}
+  }
 
-.tabImg01 {
-  width: 100%;
-}
+  .tabImg01 {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 450px) {
   .sp_logo {
     width: 120px !important;
+  }
+
+  .banner-slick .illustration div {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .banner-slick .box .bg {
+    bottom: 100px;
+    height: 35%;
   }
 }
