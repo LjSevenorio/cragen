@@ -18,6 +18,10 @@
   box-sizing: inherit;
 }
 
+:root {
+  --viewport-height: 100vh;
+}
+
 html {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -1109,7 +1113,6 @@ li.dropdown {
 /* Section03 */
 
 .sect03Header01 {
-  width: 370px;
   text-align: center;
   font-size: 300%;
   font-weight: normal;
@@ -1316,6 +1319,10 @@ li.dropdown {
 }
 /* TABS CONTENT */
 
+.menuContainer {
+  padding-right: 40px;
+}
+
 .menu-restaurant {
   width: 100%;
   padding: 5px 0 85px;
@@ -1341,7 +1348,7 @@ li.dropdown {
 .menu-restaurant .menu-line {
   position: absolute;
   top: 13px;
-  left: 166px; 
+  left: 166px;
   right: 44px;
   border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
   margin-left: 0.6rem;
@@ -1372,7 +1379,7 @@ li.dropdown {
   .header01,
   .sec04Header02,
   h2 {
-    font-size: 277% !important;
+    font-size: 200% !important;
   }
 
   p {
@@ -1395,14 +1402,14 @@ li.dropdown {
   .wrapInner {
     padding-left: 20px;
     padding-right: 20px;
-}
+  }
 
   .nav .nav01 {
     z-index: 2;
     display: flex;
     width: 100%;
     flex-direction: column;
-    height: 123vw;
+    height: calc(var(--viewport-height) - 0px);
     overflow-y: scroll;
     background: #333;
   }
@@ -1635,11 +1642,17 @@ li.dropdown {
 
   .snip1361 figcaption:before {
     z-index: 0;
-}
+  }
+
+  /* Section3 */
+
+  .sect03Header01 {
+    width: auto;
+  }
 
   /* ------------BRANCH 1 TABS---------*/
-
-  .menu-restaurant {
+  
+  .menuContainer .menu-restaurant {
     padding: 0;
   }
 
@@ -1656,7 +1669,7 @@ li.dropdown {
   }
 
   .menu-restaurant .menu-line {
-    margin-left: 0.1rem;
+    margin-left: 0;
     top: 10px;
     left: 129px;
     right: 44px;
