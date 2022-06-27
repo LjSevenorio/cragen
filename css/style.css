@@ -1386,21 +1386,23 @@ li.dropdown {
   }
 
   .nav01 {
-    margin-top: 480px;
-    padding: 150px 50px 0;
+    margin-top: 0;
+    padding: 76px 50px 400px;
   }
 
   .nav .nav01 {
-    position: fixed;
     z-index: 2;
+    display: flex;
     width: 100%;
+    flex-direction: column;
+    height: 200vw;
     overflow-y: scroll;
     background: #333;
   }
 
   .nav .nav01 li {
     display: block;
-    padding: 19px 0;
+    padding: 15px 0;
     font-weight: 700;
     text-align: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -1414,6 +1416,7 @@ li.dropdown {
 
   #nav-icon3 {
     display: block;
+    float: left;
     position: fixed;
     z-index: 9999999;
     margin: 4%;
@@ -1425,11 +1428,13 @@ li.dropdown {
 
   .sp_logo {
     display: block;
+    float: left;
     position: fixed;
     z-index: 9;
+    top: 0;
     width: 130px !important;
     margin: 0;
-    padding: 100px 0 10px 22px;
+    padding: 15px 0 10px 22px;
     background: #333;
     text-align: left;
   }
