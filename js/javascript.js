@@ -15,12 +15,15 @@ $(document).ready(function () {
       $(this).toggleClass("open");
       $(".nav").toggleClass("fade");
       document.body.classList.toggle('lock-scroll');
+      $('.dropdown-content').hide();
     });
 
     $(".nav li a").click(function () {
       $("#nav-icon3").toggleClass("open");
       $(".nav").toggleClass("fade");
       document.body.classList.toggle('lock-scroll');
+      $('.dropdown-content').hide();
+
     });
   }
 
@@ -95,6 +98,9 @@ $(document).ready(function () {
     );
   });
 
+  
+  $('.banner-slick').slick({});
+
   $('.slider-slick').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -108,27 +114,28 @@ $(document).ready(function () {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
+          dots: false,
+          arrows: false
         }
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToScroll: 2,
+          arrows: false
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          arrows: false
         }
       }
     ]
   });
-
-  $('.banner-slick').slick({});
 
   $('.tabs-slick').slick({
     prevArrow: false,
@@ -140,15 +147,13 @@ $(document).ready(function () {
         slidesToScroll: 1,
         infinite: true
       }
-    }
-  ]
+    }]
   });
 
 
 
   $(".accordion-tabs button").click(function () {
-    if ($('.accordion-tab').hasClass('.accordion-active')) 
-    {
+    if ($('.accordion-tab').hasClass('.accordion-active')) {
       $('accordion-active').fadeIn(1000);
     }
     $('.tabs-slick').slick('refresh');
@@ -267,3 +272,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 /* end Document Ready                       				   		
 ############################################ */
+
+scrollOnLoad();
+
+function scrollOnLoad() {
+  window.scrollBy(0, 1);
+}
