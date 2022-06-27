@@ -2,13 +2,14 @@
 @import url(//db.onlinewebfonts.com/c/21557ee414b26ee5e210afc96ebc6fbc?family=Aachen+BT);
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 @import url(https://fonts.googleapis.com/css?family=Quattrocento);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 *:before,
@@ -24,14 +25,15 @@
 
 html {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
   font-size: 62.5%;
 }
+
 @media only screen and (max-width: 800px) {
   html {
     font-size: 57%;
   }
 }
+
 body .wrap {
   overflow-x: hidden;
 }
@@ -58,7 +60,18 @@ a {
 }
 
 p {
-  line-height: 1.5em;
+  font-size: 0.875rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 26px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Berkshire Swash", cursive;
 }
 
 img {
@@ -1167,8 +1180,8 @@ li.dropdown {
   width: 96%;
   overflow: hidden;
   background: white;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.3);
+  /* border-radius: 10px; */
+  /* box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.3); */
 }
 @media (min-width: 600px) {
   .accordion {
@@ -1228,7 +1241,7 @@ li.dropdown {
   padding-bottom: 0;
   color: #003852;
   cursor: inherit;
-  font-size: 110%;
+  font-size: 140%;
 }
 .accordion-active .accordion-item__label:hover {
   background: none;
@@ -1273,27 +1286,43 @@ li.dropdown {
 @media (min-width: 600px) {
   .accordion-tabs {
     display: flex;
-    background: #d2e2ea;
+    justify-content: center;
+    /* background: #d2e2ea; */
   }
   .accordion-tabs .accordion-tab {
-    flex: 1;
+    /* flex: 1; */
+    border-radius: 15px;
     font-size: 150%;
+    margin: 0 17px;
     padding: 20px;
     border: none;
+    position: relative;
     cursor: pointer;
-    color: #003852;
-    background: #d2e2ea;
+    /* color: #003852; */
+    background: none;
     transition: all 0.1s ease;
   }
-  .accordion-tabs .accordion-tab:hover {
-    background: #c1d7e2;
+  .accordion-tabs .accordion-tab:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  .accordion-tabs .accordion-tab::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #ebb40a;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
   }
   .accordion-tabs .accordion-tab:last-child {
     border-right: 0;
   }
   .accordion-tabs .accordion-tab.accordion-active {
-    color: #006b99;
-    background: white;
+    color: #ebb40a;
   }
   .accordion-item {
     display: none;
@@ -1308,7 +1337,7 @@ li.dropdown {
     transition: inherit;
   }
   .accordion-item__label {
-    margin: 0 0 20px 30px;
+    margin: 0 0 45px 6px;
   }
   .accordion-item.accordion-active {
     display: block;
@@ -1334,7 +1363,7 @@ li.dropdown {
   padding: 5px 0;
   color: rgb(177, 177, 177);
   font-family: Satisfy, "Open Sans", arial;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .menu-restaurant .menu-title {
@@ -1383,7 +1412,7 @@ li.dropdown {
   }
 
   p {
-    font-size: 120% !important;
+    font-size: 90% !important;
   }
 
   .sp {
@@ -1433,7 +1462,7 @@ li.dropdown {
     float: left;
     position: fixed;
     z-index: 9999999;
-    margin: 4%;
+    margin: 3%;
   }
 
   .logo {
@@ -1446,11 +1475,15 @@ li.dropdown {
     position: fixed;
     z-index: 9;
     top: 0;
-    width: 130px !important;
+    width: 100% !important;
     margin: 0;
-    padding: 15px 0 10px 22px;
+    padding: 10px 0 0 22px;
     background: #333;
     text-align: left;
+  }
+
+  .sp_logo img {
+    width: 16% !important;
   }
 
   .logo img {
@@ -1566,7 +1599,7 @@ li.dropdown {
 
   .sec01Txt01 {
     width: 100%;
-    padding: 0 50px;
+    padding: 0 20px;
   }
 
   .sect01Header01::after {
@@ -1651,8 +1684,7 @@ li.dropdown {
   }
 
   /* ------------BRANCH 1 TABS---------*/
-  
-  .menuContainer .menu-restaurant {
+  .menuContainer {
     padding: 0;
   }
 
@@ -1669,7 +1701,7 @@ li.dropdown {
   }
 
   .menu-restaurant .menu-line {
-    margin-left: 0;
+    margin-left: 10px;
     top: 10px;
     left: 129px;
     right: 44px;
@@ -1685,9 +1717,6 @@ li.dropdown {
 }
 
 @media screen and (max-width: 450px) {
-  .sp_logo {
-    width: 120px !important;
-  }
 
   .banner-slick .box {
     padding-top: 0;

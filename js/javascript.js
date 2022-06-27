@@ -153,11 +153,9 @@ $(document).ready(function () {
 
 
   $(".accordion-tabs button").click(function () {
-    if ($('.accordion-tab').hasClass('.accordion-active')) {
-      $('accordion-active').fadeIn(1000);
-    }
+
     $('.tabs-slick').slick('refresh');
-    $('.accordion-active').fadeIn(200)
+    $('.accordion-active').fadeIn(1000);
 
   });
   AOS.init({
