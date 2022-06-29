@@ -1732,6 +1732,10 @@ li.dropdown {
 	position: absolute;
 }
 
+.glowtop .fa-solid {
+  font-size: 30px;
+}
+
 #return-to-top:hover {
   background: #fff;
 }
