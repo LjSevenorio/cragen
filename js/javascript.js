@@ -1,4 +1,3 @@
-// SP Burger
 $(document).ready(function () {
 
   if ($(window).width() < 768) {
@@ -162,14 +161,33 @@ $(document).ready(function () {
     }]
   });
 
+  if ($(window).width() >= 600) {
+    $('.accordion-item').hide();
+    $('.tabItem1').fadeIn();
+    $('.tabBtn1').click(function () {
+      $('.accordion-item').hide();
+      $('.tabItem1').fadeIn();
+      $('.tabs-slick').slick("setPosition", 0);
+    })
 
+    $('.tabBtn2').click(function () {
+      $('.accordion-item').hide();
+      $('.tabItem2').fadeIn();
+      $('.tabs-slick').slick("setPosition", 0);
+    })
 
-  $(".accordion-tabs button").click(function () {
+    $('.tabBtn3').click(function () {
+      $('.accordion-item').hide();
+      $('.tabItem3').fadeIn();
+      $('.tabs-slick').slick("setPosition", 0);
+    })
+  }
 
-    $('.tabs-slick').slick('refresh');
-    $('.accordion-active').fadeIn(1000);
+  // if ($('.accordion-tabs button').hasClass('accordion-active')) {
+  //   //  $('.accordion-item').hide();
+  //   $('.accordion-content .accordion-active').delay(1000).fadeIn('slow');
+  // }
 
-  });
   AOS.init({
     once: true
   });

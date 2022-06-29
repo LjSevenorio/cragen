@@ -1063,7 +1063,7 @@ li.dropdown {
   overflow: hidden;
   margin: 10px;
   min-width: 230px;
-  max-width: 300px;
+  max-width: 262px;
   width: 100%;
   color: #141414;
   text-align: left;
@@ -1126,7 +1126,7 @@ li.dropdown {
 }
 .snip1361:hover figcaption,
 .snip1361.hover figcaption {
-  top: 80px;
+  top: 55px;
 }
 
 .sect02Header01 {
@@ -1167,6 +1167,10 @@ li.dropdown {
 }
 
 /* Section03 */
+
+.branch {
+  overflow: hidden;
+}
 
 .sect03Header01 {
   text-align: center;
@@ -1218,14 +1222,14 @@ li.dropdown {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-top: 20px;
 }
 .accordion {
@@ -1308,6 +1312,7 @@ li.dropdown {
 }
 .accordion-active .accordion-item__label::after {
   opacity: 0;
+  display: none;
 }
 .accordion-active .accordion-item__container {
   height: auto;
@@ -1397,9 +1402,11 @@ li.dropdown {
     color: #ebb40a;
   }
   .accordion-item {
-    display: none;
-    min-height: 260px;
-    padding: 30px;
+    /* display: none; */
+    overflow-y: hidden;
+    height: 0;
+    /* min-height: 260px; */
+    /* padding: 30px; */
     border: none;
     background: white;
   }
@@ -1414,7 +1421,9 @@ li.dropdown {
     margin: 0 0 45px 6px;
   }
   .accordion-item.accordion-active {
-    display: block;
+    /* display: block; */
+    min-height: 260px;
+    height: auto;
   }
   .accordion-item.accordion-active .accordion-item__container {
     padding: 0;
@@ -1744,10 +1753,6 @@ li.dropdown {
   -moz-border-radius: 35px;
   transition: all 0.3s ease;
   -webkit-border-radius: 35px;
-}
-
-.fa-solid, .fas {
-  font-size: 30px;
 }
 
 /* @media querries */
