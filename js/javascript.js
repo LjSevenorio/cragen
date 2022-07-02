@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
   if ($(window).width() < 768) {
-    $('.dropdown .glow').click(function () {
+    $('.branches .glow').click(function () {
       $('.dropdown-content').slideToggle();
       $('.contact .dropdown-content').hide();
       e.preventDefault();
@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     $('.contact .glow').click(function () {
       $('.contact .dropdown-content').slideToggle();
-      $('.dropdown .dropdown-content').hide();
+      $('.branches .dropdown-content').hide();
       e.preventDefault();
     })
 
