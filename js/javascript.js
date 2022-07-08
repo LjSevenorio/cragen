@@ -191,6 +191,25 @@ $(document).ready(function () {
   AOS.init({
     once: true
   });
+
+  // Click function for show the Modal
+  $('.show').click(function () {
+    $(this).next(".mask").addClass("active");
+    $('body').css('overflow', 'hidden');
+    console.log("hello world");
+  });
+
+  // Function for close the Modal
+  function closeModal() {
+    $(".mask").removeClass("active");
+    $('body').css('overflow', 'auto');
+  }
+
+  // Call the closeModal function on click
+  $(".close, .mask").on("click", function () {
+    closeModal();
+    $('body').css('overflow', 'auto');
+  });
 });
 
 $(document).ready(function () {
