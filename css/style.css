@@ -1109,6 +1109,8 @@ li.dropdown {
 }
 .accordion-active .accordion-item__container {
   height: auto;
+  width: 55%;
+  margin: 0 auto;
   padding: 20px;
   opacity: 1;
   display: -webkit-box;
@@ -1916,6 +1918,12 @@ li.dropdown {
   .sect03Header01 {
     width: auto;
   }
+
+  /* Accordion */
+  .accordion-active .accordion-item__container {
+    width: 100%;
+  }
+
   /* modal_cp */
 
   .center,
