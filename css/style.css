@@ -1109,8 +1109,6 @@ li.dropdown {
 }
 .accordion-active .accordion-item__container {
   height: auto;
-  width: 55%;
-  margin: 0 auto;
   padding: 20px;
   opacity: 1;
   display: -webkit-box;
@@ -1155,6 +1153,7 @@ li.dropdown {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    margin-bottom: 20px;
   }
   .accordion-tabs .accordion-tab {
     border-radius: 15px;
@@ -1221,6 +1220,8 @@ li.dropdown {
 
 .menuContainer {
   padding: 0 10px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .menu-restaurant {
@@ -1267,8 +1268,49 @@ li.dropdown {
   display: block;
 }
 
+.makatiMenu {
+  width: 50%;
+}
+
 .tabImg01 {
   width: 50%;
+}
+
+.roomTab3 {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* branch tabs slider */
+
+.menu-slick {
+  width: 50%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.menu-slick .slick-prev:before,
+.menu-slick .slick-next:before,
+.menu-slick .slick-prev:before,
+.menu-slick .slick-next:before {
+  color: #000;
+  font-size: 50px;
+}
+
+.slick-prev:before {
+  content: "❮" !important;
+}
+
+.slick-next::before {
+  content: "❯" !important;
+}
+
+.slick-dots {
+  bottom: 30px !important;
+}
+
+.slick-dots li button:before {
+  font-size: 50px !important;
 }
 
 /* sec03_cont02 */
@@ -1330,6 +1372,9 @@ li.dropdown {
   cursor: pointer;
   counter-increment: item-counter;
 }
+
+/* Makati Gallery */
+
 .makatiGallery:nth-of-type(1) {
   background-image: url("../images/branches/makati/gallery/gallery01.jpg");
 }
@@ -1374,6 +1419,108 @@ li.dropdown {
 }
 .makatiGallery:nth-of-type(15) {
   background-image: url("../images/branches/makati/gallery/gallery15.jpg");
+}
+
+/* Broadway Gallery */
+.broadwayGallery:nth-of-type(1) {
+  background-image: url("../images/branches/broadway/gallery/gallery01.jpg");
+}
+
+.broadwayGallery:nth-of-type(2) {
+  background-image: url("../images/branches/broadway/gallery/gallery02.jpg");
+}
+
+.broadwayGallery:nth-of-type(3) {
+  background-image: url("../images/branches/broadway/gallery/gallery03.jpg");
+}
+
+.broadwayGallery:nth-of-type(4) {
+  background-image: url("../images/branches/broadway/gallery/gallery04.jpg");
+}
+
+.broadwayGallery:nth-of-type(5) {
+  background-image: url("../images/branches/broadway/gallery/gallery05.jpg");
+}
+
+.broadwayGallery:nth-of-type(6) {
+  background-image: url("../images/branches/broadway/gallery/gallery06.jpg");
+}
+
+/* Sabang Gallery */
+
+.sabangGallery:nth-of-type(1) {
+  background-image: url("../images/branches/sabang/gallery/gallery01.jpg");
+}
+
+.sabangGallery:nth-of-type(2) {
+  background-image: url("../images/branches/sabang/gallery/gallery02.jpg");
+}
+
+.sabangGallery:nth-of-type(3) {
+  background-image: url("../images/branches/sabang/gallery/gallery03.jpg");
+}
+
+.sabangGallery:nth-of-type(4) {
+  background-image: url("../images/branches/sabang/gallery/gallery04.jpg");
+}
+
+.sabangGallery:nth-of-type(5) {
+  background-image: url("../images/branches/sabang/gallery/gallery05.jpg");
+}
+
+.sabangGallery:nth-of-type(6) {
+  background-image: url("../images/branches/sabang/gallery/gallery06.jpg");
+}
+
+.sabangGallery:nth-of-type(7) {
+  background-image: url("../images/branches/sabang/gallery/gallery07.jpg");
+}
+
+.sabangGallery:nth-of-type(8) {
+  background-image: url("../images/branches/sabang/gallery/gallery08.jpg");
+}
+
+.sabangGallery:nth-of-type(9) {
+  background-image: url("../images/branches/sabang/gallery/gallery09.jpg");
+}
+
+/* Sinandigan Gallery */
+
+.sinandiganGallery:nth-of-type(1) {
+  background-image: url("../images/branches/sinandigan/gallery/gallery01.jpg");
+}
+.sinandiganGallery:nth-of-type(2) {
+  background-image: url("../images/branches/sinandigan/gallery/gallery02.jpg");
+}
+.sinandiganGallery:nth-of-type(3) {
+  background-image: url("../images/branches/sinandigan/gallery/gallery03.jpg");
+}
+.sinandiganGallery:nth-of-type(4) {
+  background-image: url("../images/branches/sinandigan/gallery/gallery04.jpg");
+}
+.sinandiganGallery:nth-of-type(5) {
+  background-image: url("../images/branches/sinandigan/gallery/gallery05.jpg");
+}
+.sinandiganGallery:nth-of-type(6) {
+  background-image: url("../images/branches/sinandigan/gallery/gallery06.jpg");
+}
+.sinandiganGallery:nth-of-type(7) {
+  background-image: url("../images/branches/sinandigan/gallery/gallery07.jpg");
+}
+.sinandiganGallery:nth-of-type(8) {
+  background-image: url("../images/branches/sinandigan/gallery/gallery08.jpg");
+}
+.sinandiganGallery:nth-of-type(9) {
+  background-image: url("../images/branches/sinandigan/gallery/gallery09.jpg");
+}
+.sinandiganGallery:nth-of-type(10) {
+  background-image: url("../images/branches/sinandigan/gallery/gallery10.jpg");
+}
+.sinandiganGallery:nth-of-type(11) {
+  background-image: url("../images/branches/sinandigan/gallery/gallery11.jpg");
+}
+.sinandiganGallery:nth-of-type(12) {
+  background-image: url("../images/branches/sinandigan/gallery/gallery12.jpg");
 }
 
 .item:after {
@@ -1924,6 +2071,15 @@ li.dropdown {
     width: 100%;
   }
 
+  .menu-slick {
+    width: 100%;
+  }
+
+  .makatiMenu {
+    width:100%;
+  }
+  
+
   /* modal_cp */
 
   .center,
@@ -1973,7 +2129,7 @@ li.dropdown {
 
   .accordion-active .accordion-item__container {
     display: block;
-  }
+  } 
 
   .tabImg01 {
     width: 100%;
