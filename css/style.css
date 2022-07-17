@@ -1,8 +1,9 @@
 @charset "utf-8";
 @import url(//db.onlinewebfonts.com/c/21557ee414b26ee5e210afc96ebc6fbc?family=Aachen+BT);
-@import url(https://fonts.googleapis.com/css?family=Oswald);
-@import url(https://fonts.googleapis.com/css?family=Quattrocento);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://fonts.googleapis.com/css?family=Quattrocento");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
 * {
   margin: 0;
@@ -73,7 +74,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Berkshire Swash", cursive;
+  font-family: "Courgette", cursive;
 }
 
 img {
@@ -492,7 +493,7 @@ nav {
 @media only screen and (max-width: 800px) {
   .banner-slick .illustration div {
     height: 20rem;
-    width: 29rem;
+    width: 22rem;
   }
 }
 .bannerBox01 .illustration .inner {
@@ -559,7 +560,7 @@ li.dropdown {
   font-weight: normal;
   text-align: left;
   color: #333;
-  margin: 60px 0 40px;
+  margin: 75px 0 40px;
   padding-bottom: 10px;
 }
 
@@ -605,18 +606,6 @@ li.dropdown {
 .sec01_col02 {
   position: relative;
   text-align: center;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 1)),
-      to(rgba(0, 0, 0, 1))
-    ),
-    url("images/background-2.png") center bottom;
-  background: -o-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)),
-    url("images/background-2.png") center bottom;
-  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)),
-    url("images/background-2.png") center bottom;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -625,6 +614,20 @@ li.dropdown {
   justify-content: space-between;
   margin-bottom: 200px;
   padding: 0 135px;
+}
+
+.sec01_col02::before {
+  background-color: #000;
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 110px;
+  right: 0px;
+  width: 100%;
+  height: 95%;
+  z-index: -1;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .sec01_col02 .sect01Header01 {
@@ -637,7 +640,10 @@ li.dropdown {
 
 .sec01_col02 .sec01Col02txt01 {
   width: 50%;
+  padding-top: 100px;
 }
+
+
 
 .sec01Col02txt01 .slider {
   margin-bottom: 5%;
@@ -1379,45 +1385,36 @@ li.dropdown {
   background-image: url("../images/branches/makati/gallery/gallery01.jpg");
 }
 .makatiGallery:nth-of-type(2) {
-  background-image: url("../images/branches/makati/gallery/gallery02.jpg");
-}
-.makatiGallery:nth-of-type(3) {
   background-image: url("../images/branches/makati/gallery/gallery03.jpg");
 }
-.makatiGallery:nth-of-type(4) {
+.makatiGallery:nth-of-type(3) {
   background-image: url("../images/branches/makati/gallery/gallery04.jpg");
 }
-.makatiGallery:nth-of-type(5) {
+.makatiGallery:nth-of-type(4) {
   background-image: url("../images/branches/makati/gallery/gallery05.jpg");
 }
-.makatiGallery:nth-of-type(6) {
-  background-image: url("../images/branches/makati/gallery/gallery06.jpg");
-}
-.makatiGallery:nth-of-type(7) {
+.makatiGallery:nth-of-type(5) {
   background-image: url("../images/branches/makati/gallery/gallery07.jpg");
 }
-.makatiGallery:nth-of-type(8) {
+.makatiGallery:nth-of-type(6) {
   background-image: url("../images/branches/makati/gallery/gallery08.jpg");
 }
-.makatiGallery:nth-of-type(9) {
-  background-image: url("../images/branches/makati/gallery/gallery09.jpg");
-}
-.makatiGallery:nth-of-type(10) {
+.makatiGallery:nth-of-type(7) {
   background-image: url("../images/branches/makati/gallery/gallery10.jpg");
 }
-.makatiGallery:nth-of-type(11) {
+.makatiGallery:nth-of-type(8) {
   background-image: url("../images/branches/makati/gallery/gallery11.jpg");
 }
-.makatiGallery:nth-of-type(12) {
+.makatiGallery:nth-of-type(9) {
   background-image: url("../images/branches/makati/gallery/gallery12.jpg");
 }
-.makatiGallery:nth-of-type(13) {
+.makatiGallery:nth-of-type(10) {
   background-image: url("../images/branches/makati/gallery/gallery13.jpg");
 }
-.makatiGallery:nth-of-type(14) {
+.makatiGallery:nth-of-type(11) {
   background-image: url("../images/branches/makati/gallery/gallery14.jpg");
 }
-.makatiGallery:nth-of-type(15) {
+.makatiGallery:nth-of-type(12) {
   background-image: url("../images/branches/makati/gallery/gallery15.jpg");
 }
 
@@ -1958,7 +1955,7 @@ li.dropdown {
 
   .sec01_cont01 {
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 135px;
   }
 
   .sect01Header01 {
@@ -2076,9 +2073,8 @@ li.dropdown {
   }
 
   .makatiMenu {
-    width:100%;
+    width: 100%;
   }
-  
 
   /* modal_cp */
 
@@ -2129,7 +2125,7 @@ li.dropdown {
 
   .accordion-active .accordion-item__container {
     display: block;
-  } 
+  }
 
   .tabImg01 {
     width: 100%;
