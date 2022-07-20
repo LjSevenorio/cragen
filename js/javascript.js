@@ -98,7 +98,7 @@ $(document).ready(function () {
     if ($(window).scrollTop() + $(window).height() < $(document).height() - $(".footer").height()) {
       $('#return-to-top').css("position", "fixed"); //resetting it
       $('#return-to-top').css("bottom", "45px"); //resetting it
-    } 
+    }
 
     if ($(window).width() < 769) {
       if ($(window).scrollTop() + $(window).height() > $(document).height() - $(".footer").height()) {
@@ -111,150 +111,150 @@ $(document).ready(function () {
         $('#return-to-top').css("bottom", "110px"); // 60 px, height of #toTop
       }
     }
+  });
+  
+  $("#return-to-top").click(function () {
+    $("body,html").animate({
+        scrollTop: 0,
+      },
+      500
+    );
+  });
 
-});
-$("#return-to-top").click(function () {
-  $("body,html").animate({
-      scrollTop: 0,
-    },
-    500
-  );
-});
+  $('.banner-slick').slick({
+    infinite: true,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false
+  });
 
-$('.banner-slick').slick({
-  infinite: true,
-  dots: false,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  arrows: false
-});
+  $('.slider-slick').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    focusOnSelect: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [{
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: false,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+        }
+      }
+    ]
+  });
 
-$('.slider-slick').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  dots: false,
-  focusOnSelect: true,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  responsive: [{
+  $('.tabs-slick').slick({
+    prevArrow: false,
+    nextArrow: false,
+    responsive: [{
       breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: false,
-        arrows: false
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        arrows: false
-      }
-    },
-    {
-      breakpoint: 480,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false
+        infinite: true
       }
-    }
-  ]
-});
+    }]
+  });
 
-$('.tabs-slick').slick({
-  prevArrow: false,
-  nextArrow: false,
-  responsive: [{
-    breakpoint: 1024,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      infinite: true
-    }
-  }]
-});
+  $('.gallery-slick').slick({
+    prevArrow: false,
+    nextArrow: false,
+    responsive: [{
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000
+      }
+    }]
+  });
 
-$('.gallery-slick').slick({
-  prevArrow: false,
-  nextArrow: false,
-  responsive: [{
-    breakpoint: 1024,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 3000
-    }
-  }]
-});
+  $('.menu-slick').slick({
+    infinite: true,
+    autoplay: true,
+    dots: true,
+    autoplaySpeed: 3000,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        prevArrow: false,
+        nextArrow: false,
+        dots: false,
+      }
+    }]
+  });
 
-$('.menu-slick').slick({
-  infinite: true,
-  autoplay: true,
-  dots: true,
-  autoplaySpeed: 3000,
-  responsive: [{
-    breakpoint: 768,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      infinite: true,
-      prevArrow: false,
-      nextArrow: false,
-      dots: false,
-    }
-  }]
-});
-
-if ($(window).width() >= 600) {
-  $('.accordion-item').hide();
-  $('.tabItem1').fadeIn();
-  $('.tabBtn1').click(function () {
+  if ($(window).width() >= 600) {
     $('.accordion-item').hide();
     $('.tabItem1').fadeIn();
-    $('.menu-slick').slick("setPosition", 0);
-  })
+    $('.tabBtn1').click(function () {
+      $('.accordion-item').hide();
+      $('.tabItem1').fadeIn();
+      $('.menu-slick').slick("setPosition", 0);
+    })
 
-  $('.tabBtn2').click(function () {
-    $('.accordion-item').hide();
-    $('.tabItem2').fadeIn();
-    $('.menu-slick').slick("setPosition", 0);
-  })
+    $('.tabBtn2').click(function () {
+      $('.accordion-item').hide();
+      $('.tabItem2').fadeIn();
+      $('.menu-slick').slick("setPosition", 0);
+    })
 
-  $('.tabBtn3').click(function () {
-    $('.accordion-item').hide();
-    $('.tabItem3').fadeIn();
-    $('.menu-slick').slick("setPosition", 0);
-  })
-}
+    $('.tabBtn3').click(function () {
+      $('.accordion-item').hide();
+      $('.tabItem3').fadeIn();
+      $('.menu-slick').slick("setPosition", 0);
+    })
+  }
 
-AOS.init({
-  once: true
-});
+  AOS.init({
+    once: true
+  });
 
-// Click function for show the Modal
-$('.show').click(function () {
-  $(this).next(".mask").addClass("active");
-  $('body').css('overflow', 'hidden');
-  console.log("hello world");
-});
+  // Click function for show the Modal
+  $('.show').click(function () {
+    $(this).next(".mask").addClass("active");
+    $('body').css('overflow', 'hidden');
+    console.log("hello world");
+  });
 
-// Function for close the Modal
-function closeModal() {
-  $(".mask").removeClass("active");
-  $('body').css('overflow', 'auto');
-}
+  // Function for close the Modal
+  function closeModal() {
+    $(".mask").removeClass("active");
+    $('body').css('overflow', 'auto');
+  }
 
-// Call the closeModal function on click
-$(".close, .mask").on("click", function () {
-closeModal();
-$('body').css('overflow', 'auto');
-});
+  // Call the closeModal function on click
+  $(".close, .mask").on("click", function () {
+    closeModal();
+    $('body').css('overflow', 'auto');
+  });
 });
 
 $(document).ready(function () {
