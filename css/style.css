@@ -643,8 +643,6 @@ li.dropdown {
   padding-top: 100px;
 }
 
-
-
 .sec01Col02txt01 .slider {
   margin-bottom: 5%;
 }
@@ -2160,6 +2158,14 @@ li.dropdown {
 
   .tabImg01 {
     width: 100%;
+  }
+
+  .section02 {
+    padding-bottom: 20px;
+  }
+
+  .sec02_col01 {
+    margin-bottom: 40px;
   }
 
   /* sec03_cont03 */
