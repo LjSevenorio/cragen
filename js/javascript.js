@@ -112,7 +112,7 @@ $(document).ready(function () {
       }
     }
   });
-  
+
   $("#return-to-top").click(function () {
     $("body,html").animate({
         scrollTop: 0,
@@ -241,7 +241,6 @@ $(document).ready(function () {
   $('.show').click(function () {
     $(this).next(".mask").addClass("active");
     $('body').css('overflow', 'hidden');
-    console.log("hello world");
   });
 
   // Function for close the Modal
