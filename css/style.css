@@ -319,7 +319,6 @@ nav {
   display: -ms-grid !important;
   display: grid !important;
   /* -ms-grid-columns: (1fr) [2]; */
-  -ms-grid-columns: (1fr) [2];
   grid-template-columns: repeat(2, 1fr);
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -332,17 +331,15 @@ nav {
   .banner-slick .box {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    /* -ms-grid-rows: (1fr) [2]; */
-    -ms-grid-rows: (1fr) [2];
     grid-template-rows: repeat(2, 1fr);
   }
   .banner-slick .box > *:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
+    grid-row: 1;
+    grid-column: 1;
   }
   .banner-slick .box > *:nth-child(2) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
+    grid-row: 2;
+    grid-column: 1;
   }
 }
 .banner-slick .box .bg {
@@ -801,10 +798,10 @@ li.dropdown {
 }
 .snip1361 figcaption {
   position: absolute;
-  top: calc(55%);
+  top: calc(67%);
   width: 100%;
   background-color: #ffffff;
-  padding: 15px 25px 65px;
+  padding: 0 25px 65px;
 }
 .snip1361 figcaption:before {
   position: absolute;
@@ -1363,9 +1360,9 @@ li.dropdown {
   box-sizing: border-box;
   background: #0c9a9a;
   color: #fff;
-  -ms-grid-column: auto;
+  grid-column: auto;
   grid-column-start: auto;
-  -ms-grid-row: auto;
+  grid-row: auto;
   grid-row-start: auto;
   color: #fff;
   background-size: cover;
@@ -1379,45 +1376,6 @@ li.dropdown {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   cursor: pointer;
   counter-increment: item-counter;
-}
-
-/* Makati Gallery */
-
-.makatiGallery:nth-of-type(1) {
-  background-image: url("../images/branches/makati/gallery/gallery01.jpg");
-}
-.makatiGallery:nth-of-type(2) {
-  background-image: url("../images/branches/makati/gallery/gallery03.jpg");
-}
-.makatiGallery:nth-of-type(3) {
-  background-image: url("../images/branches/makati/gallery/gallery04.jpg");
-}
-.makatiGallery:nth-of-type(4) {
-  background-image: url("../images/branches/makati/gallery/gallery05.jpg");
-}
-.makatiGallery:nth-of-type(5) {
-  background-image: url("../images/branches/makati/gallery/gallery07.jpg");
-}
-.makatiGallery:nth-of-type(6) {
-  background-image: url("../images/branches/makati/gallery/gallery08.jpg");
-}
-.makatiGallery:nth-of-type(7) {
-  background-image: url("../images/branches/makati/gallery/gallery10.jpg");
-}
-.makatiGallery:nth-of-type(8) {
-  background-image: url("../images/branches/makati/gallery/gallery11.jpg");
-}
-.makatiGallery:nth-of-type(9) {
-  background-image: url("../images/branches/makati/gallery/gallery12.jpg");
-}
-.makatiGallery:nth-of-type(10) {
-  background-image: url("../images/branches/makati/gallery/gallery13.jpg");
-}
-.makatiGallery:nth-of-type(11) {
-  background-image: url("../images/branches/makati/gallery/gallery14.jpg");
-}
-.makatiGallery:nth-of-type(12) {
-  background-image: url("../images/branches/makati/gallery/gallery15.jpg");
 }
 
 /* Makati Beverage Gallery */
