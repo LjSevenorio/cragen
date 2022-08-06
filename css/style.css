@@ -366,7 +366,7 @@ nav {
   .banner-slick .box .bg {
     width: 100%;
     left: 0;
-    bottom: 55px;
+    bottom: 85px;
     height: 35%;
     -webkit-transform: skewX(0deg);
     -ms-transform: skewX(0deg);
@@ -455,6 +455,10 @@ nav {
     color: #fff;
     margin-bottom: 0.5rem;
     margin-top: 7rem;
+  }
+
+  .box .details h1::after {
+    margin: 15px auto;
   }
 }
 
@@ -1316,6 +1320,10 @@ li.dropdown {
 
 .slick-dots li button:before {
   font-size: 50px !important;
+}
+
+.tabs-slick .slick-dots li.slick-active button:before {
+  color: white !important;
 }
 
 /* sec03_cont02 */

@@ -175,6 +175,15 @@ $(document).ready(function () {
         slidesToScroll: 1,
         infinite: true
       }
+    }],
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        infinite: true,
+        autoplay: true,
+        dots: true,
+        autoplaySpeed: 2000
+      }
     }]
   });
 
